@@ -1,0 +1,31 @@
+{
+    "about": {
+        "profile_picture": "assets/images/profile.jpg",
+        "bio": "Hello! I’m a fashion design student with a passion for creating timeless and innovative designs. My journey in fashion started with a love for art and textiles, which led me to pursue my dream of designing for the modern world. Explore my portfolio to see my vision come to life!"
+    },
+    "portfolio": [
+        {
+            "image": "assets/images/design1.jpg",
+            "title": "Evening Gown",
+            "description": "A flowing evening gown inspired by vintage aesthetics."
+        },
+        {
+            "image": "assets/images/design2.jpg",
+            "title": "Streetwear Collection",
+            "description": "Bold and modern streetwear for everyday comfort."
+        },
+        {
+            "image": "assets/images/design3.jpg",
+            "title": "Bridal Wear",
+            "description": "Elegant bridal wear crafted with intricate details."
+        }
+    ],
+    "contact": {
+        "email": "yourfriend@example.com",
+        "phone": "+1234567890",
+        "socials": {
+            "instagram": "https://instagram.com/fashiondesigner",
+            "linkedin": "https://linkedin.com/in/fashiondesigner"
+        }
+    }
+}
