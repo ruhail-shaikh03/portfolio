@@ -91,26 +91,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <!-- The heading should be styled with 'text-center' and additional CSS animations -->
             <h2 class="text-center" data-aos="fade-up">Get in Touch</h2>
-            <form class="row" data-aos="fade-up" data-aos-delay="200">
-                <!-- Style the inputs using the 'form-control' class -->
-                <div class="col-md-6">
-                    <input type="text" class="form-control" placeholder="Your Name">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+                <div class="col-md-6 text-center">
+                    <p class="contact-email">
+                        Email me at: <a href="mailto:rohail.shaikh0301@gmail.com">rohail.shaikh0301@gmail.com</a>
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <input type="email" class="form-control" placeholder="Your Email">
-                </div>
-                <div class="col-12">
-                    <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
-                </div>
-                <!-- Ensure the button is styled with 'btn-primary' or other CSS class -->
-                <div class="col-12 text-center">
-                    <button class="btn btn-primary">Submit</button>
-                </div>
-            </form>
+            </div>
         </div>
     </section>
+
 
     <footer class="text-center">
         <!-- Ensure the footer text is styled properly in CSS -->
@@ -147,20 +138,6 @@
         gsap.from("#hero-subtitle", { y: 50, opacity: 0, duration: 1, delay: 0.5 });
         gsap.from(".btn", { scale: 0, duration: 1, delay: 1 });
     </script>
-    <form class="row" action="send_email.php" method="post" data-aos="fade-up" data-aos-delay="200">
-        <div class="col-md-6">
-            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-        </div>
-        <div class="col-md-6">
-            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-        </div>
-        <div class="col-12">
-            <textarea class="form-control" name="message" rows="5" placeholder="Your Message" required></textarea>
-        </div>
-        <div class="col-12 text-center">
-            <button class="btn btn-primary" type="submit">Submit</button>
-        </div>
-    </form>
 
 </body>
 

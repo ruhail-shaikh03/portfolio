@@ -210,3 +210,21 @@ footer {
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
 }
+
+.contact-email {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.contact-email a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-email a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
