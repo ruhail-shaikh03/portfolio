@@ -202,3 +202,11 @@ footer {
     background: #6d4c41;
     /* Chocolate Brown */
 }
+
+.portfolio-caption {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
