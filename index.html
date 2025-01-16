@@ -15,56 +15,66 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        // Header with Parallax Banner
+        // Header with Parallax and Bold Design
         const Header = () => (
             <header className="parallax">
                 <div className="banner-content">
                     <h1 className="banner-title">Hibba Gulzar</h1>
-                    <p className="banner-subtitle">Unfolding Elegance, One Stitch at a Time</p>
+                    <p className="banner-subtitle">Fashion Beyond Limits</p>
                 </div>
             </header>
         );
 
-        // About Section with Fixed Background
+        // About Me Section with Dynamic Layout
         const About = () => (
             <section id="about" className="section about">
-                <div className="content">
-                    <h2>About Me</h2>
-                    <p>
-                        I’m Hibba Gulzar, a fashion designer blending contemporary aesthetics with cultural
-                        inspirations. I strive to create designs that tell stories and bring ideas to life
-                        through fabric. My portfolio spans everything from haute couture to modern streetwear.
-                    </p>
-                    <div className="inspiration">
-                        <h3>Inspirations</h3>
+                <div className="about-content">
+                    <div className="text">
+                        <h2>About Me</h2>
                         <p>
-                            My work draws inspiration from:
-                            <ul>
-                                <li>The intricate textures of nature</li>
-                                <li>Global cultural patterns</li>
-                                <li>Modern art movements</li>
-                            </ul>
+                            I’m Hibba Gulzar, a passionate fashion designer who combines modern trends
+                            with timeless elegance. My designs embody sophistication, creativity, and
+                            a bold expression of individuality.
                         </p>
+                        <div className="about-sliders">
+                            <div className="slider">
+                                <h3>Inspirations</h3>
+                                <p>
+                                    My work is inspired by the natural flow of fabrics, the beauty of global cultures,
+                                    and modern art movements. Fashion is not just clothing; it's a language.
+                                </p>
+                            </div>
+                            <div className="slider">
+                                <h3>Journey</h3>
+                                <p>
+                                    From sketching as a young dreamer to showcasing collections in fashion exhibitions,
+                                    my journey has been a tapestry of learning, exploration, and innovation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="images">
+                        <img src="https://via.placeholder.com/400x400" alt="Fashion Work 1" />
+                        <img src="https://via.placeholder.com/400x400" alt="Fashion Work 2" />
                     </div>
                 </div>
-                <div className="background-image about-bg"></div>
             </section>
         );
 
-        // Portfolio Section with Sliding Images
+        // Portfolio Section
         const Portfolio = () => (
             <section id="portfolio" className="section portfolio">
                 <h2>Portfolio</h2>
-                <div className="slideshow">
-                    <div className="slide">
+                <div className="portfolio-grid">
+                    <div className="portfolio-item">
                         <img src="https://via.placeholder.com/800x500" alt="Design 1" />
                         <p>Elegant Evening Gown</p>
                     </div>
-                    <div className="slide">
+                    <div className="portfolio-item">
                         <img src="https://via.placeholder.com/800x500" alt="Design 2" />
                         <p>Modern Streetwear</p>
                     </div>
-                    <div className="slide">
+                    <div className="portfolio-item">
                         <img src="https://via.placeholder.com/800x500" alt="Design 3" />
                         <p>Bridal Couture</p>
                     </div>

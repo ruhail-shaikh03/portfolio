@@ -8,10 +8,23 @@ html {
     color: #333;
 }
 
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', serif;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Header Parallax */
 .parallax {
     height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat fixed;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://via.placeholder.com/1920x1080') center/cover no-repeat fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,68 +32,82 @@ html {
     color: #fff;
 }
 
-.banner-content {
-    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-
 .banner-title {
     font-size: 4rem;
     font-weight: bold;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .banner-subtitle {
     font-size: 1.5rem;
     font-style: italic;
     margin-top: 10px;
+    animation: fadeIn 3s ease-in-out;
 }
 
-/* Section Styles */
-.section {
-    padding: 100px 20px;
-    position: relative;
-}
-
-.about {
-    position: relative;
-    color: #fff;
-}
-
-.about-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat fixed;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.inspiration ul {
-    list-style: circle;
-}
-
-/* Slideshow */
-.slideshow {
+/* About Section */
+.about-content {
     display: flex;
-    overflow-x: auto;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+}
+
+.about .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-sliders .slider {
+    margin-bottom: 20px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+
+/* Portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-.slide {
-    min-width: 300px;
-    text-align: center;
-}
-
-.slide img {
+.portfolio-item img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Footer */
 .footer {
-    text-align: center;
     background: #222;
     color: #fff;
-    padding: 20px 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
 }
