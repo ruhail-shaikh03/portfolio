@@ -5,34 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body data-page="contact">
-    <script src="assets/js/content.js"></script>
-
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">My Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
+<body>
+    <header>
+        <h1>Hibba Gulzar</h1>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <main>
+        <h2>Contact Me</h2>
+        <form>
+            <label>
+                Name: <input type="text" required>
+            </label>
+            <label>
+                Email: <input type="email" required>
+            </label>
+            <label>
+                Message: <textarea required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hibba Gulzar</p>
+    </footer>
+</body>
 
-    <main class="contact">
-        <h1>Contact Me</h1>
-        <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" requir
+</html>

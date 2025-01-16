@@ -4,42 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion Portfolio</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Hibba Gulzar Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
 </head>
 
 <body>
-    <script src="assets/js/content.js"></script>
-    <header class="header">
-        <nav class="nav">
-            <a href="index.html" class="logo">My Portfolio</a>
-            <ul class="nav-links">
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+    <header>
+        <h1>Hibba Gulzar</h1>
+        <nav>
+            <a href="index.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
-
-    <main class="hero">
-        <section class="hero-content">
-            <h1>Welcome to My Fashion Portfolio</h1>
-            <p>Explore my journey as a fashion designer through my curated collections and designs.</p>
-            <a href="portfolio.html" class="cta-button">View My Work</a>
-        </section>
-        <section class="hero-image">
-            <img src="assets/images/hero-banner.jpg" alt="Fashion Design Hero Image">
+    <main>
+        <section>
+            <h2>Welcome!</h2>
+            <p>
+                Hi, I’m Hibba Gulzar, a passionate fashion design major creating unique designs inspired by culture,
+                nature, and art.
+            </p>
+            <button @click="alert('Welcome to my portfolio!')">Learn More</button>
         </section>
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2025 My Fashion Portfolio. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Hibba Gulzar</p>
     </footer>
-
-    <script src="assets/js/content.js"></script>
 </body>
 
 </html>
