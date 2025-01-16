@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hibba Gulzar Portfolio</title>
+    <title>Hibba Gulzar - Fashion Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -15,64 +15,66 @@
     <div id="root"></div>
 
     <script type="text/babel">
-        // React Components
-
-        // Header Component
+        // Header with Parallax Banner
         const Header = () => (
-            <header className="header">
-                <h1>Hibba Gulzar</h1>
-                <nav className="nav">
-                    <a href="#about">About Me</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <header className="parallax">
+                <div className="banner-content">
+                    <h1 className="banner-title">Hibba Gulzar</h1>
+                    <p className="banner-subtitle">Unfolding Elegance, One Stitch at a Time</p>
+                </div>
             </header>
         );
 
-        // About Section Component
+        // About Section with Fixed Background
         const About = () => (
-            <section id="about" className="about-section">
-                <h2>About Me</h2>
-                <p>
-                    Hi, I’m Hibba Gulzar, a passionate fashion designer. My creations blend modern
-                    aesthetics with cultural inspirations. From intricate sketches to finished products,
-                    I aim to bring stories to life through fabric.
-                </p>
-                <div className="inspiration">
-                    <h3>Inspirations</h3>
-                    <ul>
-                        <li>Nature’s organic shapes</li>
-                        <li>Cultural textiles from around the world</li>
-                        <li>Modern art movements like Cubism and Surrealism</li>
-                    </ul>
+            <section id="about" className="section about">
+                <div className="content">
+                    <h2>About Me</h2>
+                    <p>
+                        I’m Hibba Gulzar, a fashion designer blending contemporary aesthetics with cultural
+                        inspirations. I strive to create designs that tell stories and bring ideas to life
+                        through fabric. My portfolio spans everything from haute couture to modern streetwear.
+                    </p>
+                    <div className="inspiration">
+                        <h3>Inspirations</h3>
+                        <p>
+                            My work draws inspiration from:
+                            <ul>
+                                <li>The intricate textures of nature</li>
+                                <li>Global cultural patterns</li>
+                                <li>Modern art movements</li>
+                            </ul>
+                        </p>
+                    </div>
                 </div>
+                <div className="background-image about-bg"></div>
             </section>
         );
 
-        // Portfolio Section Component
+        // Portfolio Section with Sliding Images
         const Portfolio = () => (
-            <section id="portfolio" className="portfolio-section">
+            <section id="portfolio" className="section portfolio">
                 <h2>Portfolio</h2>
-                <div className="portfolio-grid">
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Design 1" />
-                        <p>Evening Gown</p>
+                <div className="slideshow">
+                    <div className="slide">
+                        <img src="https://via.placeholder.com/800x500" alt="Design 1" />
+                        <p>Elegant Evening Gown</p>
                     </div>
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Design 2" />
+                    <div className="slide">
+                        <img src="https://via.placeholder.com/800x500" alt="Design 2" />
                         <p>Modern Streetwear</p>
                     </div>
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/300" alt="Design 3" />
+                    <div className="slide">
+                        <img src="https://via.placeholder.com/800x500" alt="Design 3" />
                         <p>Bridal Couture</p>
                     </div>
                 </div>
             </section>
         );
 
-        // Contact Section Component
+        // Contact Section
         const Contact = () => (
-            <section id="contact" className="contact-section">
+            <section id="contact" className="section contact">
                 <h2>Contact Me</h2>
                 <form>
                     <label>
@@ -92,7 +94,7 @@
             </section>
         );
 
-        // Footer Component
+        // Footer
         const Footer = () => (
             <footer className="footer">
                 <p>&copy; 2025 Hibba Gulzar. All Rights Reserved.</p>
@@ -112,7 +114,6 @@
             </>
         );
 
-        // Render the App
         ReactDOM.createRoot(document.getElementById('root')).render(<App />);
     </script>
 </body>

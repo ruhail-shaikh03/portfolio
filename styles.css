@@ -1,82 +1,86 @@
 /* General Styles */
-body {
+body,
+html {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+    scroll-behavior: smooth;
     color: #333;
-    background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
 }
 
-h1,
-h2,
-h3 {
-    color: #222;
-}
-
-header {
-    background: #222;
-    color: #fff;
-    padding: 20px 0;
+/* Header Parallax */
+.parallax {
+    height: 100vh;
+    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-header .nav a {
-    margin: 0 15px;
     color: #fff;
-    text-decoration: none;
-    font-size: 18px;
 }
 
-header .nav a:hover {
-    text-decoration: underline;
+.banner-content {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.about-section,
-.portfolio-section,
-.contact-section {
-    padding: 50px 20px;
-    margin: 20px auto;
-    max-width: 1000px;
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
 }
 
-.about-section p,
-.contact-section form {
-    font-size: 18px;
+.banner-subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-top: 10px;
 }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+/* Section Styles */
+.section {
+    padding: 100px 20px;
+    position: relative;
+}
+
+.about {
+    position: relative;
+    color: #fff;
+}
+
+.about-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat fixed;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.inspiration ul {
+    list-style: circle;
+}
+
+/* Slideshow */
+.slideshow {
+    display: flex;
+    overflow-x: auto;
     gap: 20px;
 }
 
-.portfolio-item img {
-    max-width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.contact-section input,
-.contact-section textarea,
-.contact-section button {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-footer {
+.slide {
+    min-width: 300px;
     text-align: center;
-    padding: 10px;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
     background: #222;
     color: #fff;
+    padding: 20px 0;
 }
