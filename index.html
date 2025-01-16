@@ -10,8 +10,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@600&family=Great+Vibes&display=swap"
-        rel="stylesheet">
 
     <!-- Swiper.js -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -26,11 +24,10 @@
 <body>
     <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 id="hero-title">Hibba Gulzar</h1>
             <p id="hero-subtitle">A Symphony of Fashion & Creativity</p>
-            <a href="#portfolio" class="btn btn-gradient">Explore My Work</a>
+            <a href="#portfolio" class="btn btn-outline-light">Explore My Work</a>
         </div>
     </header>
 
@@ -58,28 +55,16 @@
             <div class="swiper-container" data-aos="fade-up">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 1">
-                            <div class="portfolio-overlay">
-                                <p class="portfolio-caption">Portfolio 1</p>
-                            </div>
-                        </div>
+                        <img src="https://via.placeholder.com/800x500" alt="Portfolio 1">
+                        <p class="portfolio-caption">Portfolio 1</p>
                     </div>
                     <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 2">
-                            <div class="portfolio-overlay">
-                                <p class="portfolio-caption">Portfolio 2</p>
-                            </div>
-                        </div>
+                        <img src="https://via.placeholder.com/800x500" alt="Portfolio 2">
+                        <p class="portfolio-caption">Portfolio 2</p>
                     </div>
                     <div class="swiper-slide">
-                        <div class="portfolio-card">
-                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 3">
-                            <div class="portfolio-overlay">
-                                <p class="portfolio-caption">Portfolio 3</p>
-                            </div>
-                        </div>
+                        <img src="https://via.placeholder.com/800x500" alt="Portfolio 3">
+                        <p class="portfolio-caption">Portfolio 3</p>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -97,6 +82,7 @@
                     <p class="contact-message">
                         Whether you have a question, an idea to collaborate on, or just want to say hello, I’d love to
                         hear from you!
+                        Feel free to reach out, and I’ll get back to you as soon as possible.
                     </p>
                     <p class="contact-email">
                         Drop me a message at:
@@ -107,7 +93,8 @@
         </div>
     </section>
 
-    <footer>
+
+    <footer class="text-center">
         <p>&copy; 2025 Hibba Gulzar. All rights reserved.</p>
     </footer>
 
@@ -125,7 +112,7 @@
         const swiper = new Swiper('.swiper-container', {
             loop: true,
             navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-            autoplay: { delay: 4000 },
+            autoplay: { delay: 3000 },
         });
 
         gsap.from("#hero-title", { y: -50, opacity: 0, duration: 1 });
