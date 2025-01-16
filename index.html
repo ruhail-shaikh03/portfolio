@@ -5,126 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hibba Gulzar - Fashion Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome for Modern Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.0/babel.min.js"></script>
 </head>
 
 <body>
-    <div id="root"></div>
+    <header class="parallax">
+        <div class="container text-center text-light">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Hibba Gulzar</h1>
+            <p class="lead" data-aos="fade-up" data-aos-delay="300">Fashion Beyond Limits</p>
+        </div>
+    </header>
 
-    <script type="text/babel">
-        // Header with Parallax and Bold Design
-        const Header = () => (
-            <header className="parallax">
-                <div className="banner-content">
-                    <h1 className="banner-title">Hibba Gulzar</h1>
-                    <p className="banner-subtitle">Fashion Beyond Limits</p>
-                </div>
-            </header>
-        );
-
-        // About Me Section with Dynamic Layout
-        const About = () => (
-            <section id="about" className="section about">
-                <div className="about-content">
-                    <div className="text">
+    <main>
+        <!-- About Me Section -->
+        <section id="about" class="about py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6" data-aos="fade-right">
                         <h2>About Me</h2>
                         <p>
-                            I’m Hibba Gulzar, a passionate fashion designer who combines modern trends
-                            with timeless elegance. My designs embody sophistication, creativity, and
-                            a bold expression of individuality.
+                            Hi, I’m Hibba Gulzar, a passionate fashion designer who merges bold creativity with elegant
+                            sophistication.
+                            I draw inspiration from global cultures, modern art movements, and the natural flow of
+                            fabric to create
+                            timeless designs.
                         </p>
-                        <div className="about-sliders">
-                            <div className="slider">
-                                <h3>Inspirations</h3>
-                                <p>
-                                    My work is inspired by the natural flow of fabrics, the beauty of global cultures,
-                                    and modern art movements. Fashion is not just clothing; it's a language.
-                                </p>
-                            </div>
-                            <div className="slider">
-                                <h3>Journey</h3>
-                                <p>
-                                    From sketching as a young dreamer to showcasing collections in fashion exhibitions,
-                                    my journey has been a tapestry of learning, exploration, and innovation.
-                                </p>
-                            </div>
+                        <p>
+                            My journey began as a young artist sketching silhouettes, evolving into a professional
+                            designer
+                            showcasing collections at fashion shows and exhibitions. I believe fashion is an art form, a
+                            language
+                            of identity and expression.
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-images d-flex gap-3" data-aos="fade-left">
+                            <img src="https://via.placeholder.com/300" alt="Inspiration 1" class="rounded shadow">
+                            <img src="https://via.placeholder.com/300" alt="Inspiration 2" class="rounded shadow">
                         </div>
                     </div>
-                    <div className="images">
-                        <img src="https://via.placeholder.com/400x400" alt="Fashion Work 1" />
-                        <img src="https://via.placeholder.com/400x400" alt="Fashion Work 2" />
-                    </div>
                 </div>
-            </section>
-        );
+            </div>
+        </section>
 
-        // Portfolio Section
-        const Portfolio = () => (
-            <section id="portfolio" className="section portfolio">
-                <h2>Portfolio</h2>
-                <div className="portfolio-grid">
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/800x500" alt="Design 1" />
-                        <p>Elegant Evening Gown</p>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="zoom-in">My Portfolio</h2>
+                <div class="swiper-container" data-aos="fade-up">
+                    <div class="swiper-wrapper">
+                        <!-- Add your portfolio images here -->
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 1" class="img-fluid rounded">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 2" class="img-fluid rounded">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://via.placeholder.com/800x500" alt="Portfolio 3" class="img-fluid rounded">
+                        </div>
                     </div>
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/800x500" alt="Design 2" />
-                        <p>Modern Streetwear</p>
-                    </div>
-                    <div className="portfolio-item">
-                        <img src="https://via.placeholder.com/800x500" alt="Design 3" />
-                        <p>Bridal Couture</p>
-                    </div>
+                    <!-- Navigation Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
                 </div>
-            </section>
-        );
+            </div>
+        </section>
 
-        // Contact Section
-        const Contact = () => (
-            <section id="contact" className="section contact">
-                <h2>Contact Me</h2>
-                <form>
-                    <label>
-                        Name:
-                        <input type="text" placeholder="Your Name" required />
-                    </label>
-                    <label>
-                        Email:
-                        <input type="email" placeholder="Your Email" required />
-                    </label>
-                    <label>
-                        Message:
-                        <textarea placeholder="Your Message" required></textarea>
-                    </label>
-                    <button type="submit">Send</button>
+        <!-- Contact Section -->
+        <section id="contact" class="contact py-5">
+            <div class="container">
+                <h2 class="text-center mb-5" data-aos="fade-up">Contact Me</h2>
+                <form class="row g-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
                 </form>
-            </section>
-        );
+            </div>
+        </section>
+    </main>
 
-        // Footer
-        const Footer = () => (
-            <footer className="footer">
-                <p>&copy; 2025 Hibba Gulzar. All Rights Reserved.</p>
-            </footer>
-        );
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2025 Hibba Gulzar. All Rights Reserved.</p>
+    </footer>
 
-        // Main App Component
-        const App = () => (
-            <>
-                <Header />
-                <main>
-                    <About />
-                    <Portfolio />
-                    <Contact />
-                </main>
-                <Footer />
-            </>
-        );
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize AOS Animations
+        AOS.init();
 
-        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+        // Initialize Swiper Carousel
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     </script>
 </body>
 
