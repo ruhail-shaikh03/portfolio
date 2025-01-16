@@ -6,31 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hibba Gulzar Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.21.0/babel.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <h1>Hibba Gulzar</h1>
-        <nav>
-            <a href="index.html">About Me</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome!</h2>
-            <p>
-                Hi, I’m Hibba Gulzar, a passionate fashion design major creating unique designs inspired by culture,
-                nature, and art.
-            </p>
-            <button @click="alert('Welcome to my portfolio!')">Learn More</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Hibba Gulzar</p>
-    </footer>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // React Components
+
+        // Header Component
+        const Header = () => (
+            <header className="header">
+                <h1>Hibba Gulzar</h1>
+                <nav className="nav">
+                    <a href="#about">About Me</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+        );
+
+        // About Section Component
+        const About = () => (
+            <section id="about" className="about-section">
+                <h2>About Me</h2>
+                <p>
+                    Hi, I’m Hibba Gulzar, a passionate fashion designer. My creations blend modern
+                    aesthetics with cultural inspirations. From intricate sketches to finished products,
+                    I aim to bring stories to life through fabric.
+                </p>
+                <div className="inspiration">
+                    <h3>Inspirations</h3>
+                    <ul>
+                        <li>Nature’s organic shapes</li>
+                        <li>Cultural textiles from around the world</li>
+                        <li>Modern art movements like Cubism and Surrealism</li>
+                    </ul>
+                </div>
+            </section>
+        );
+
+        // Portfolio Section Component
+        const Portfolio = () => (
+            <section id="portfolio" className="portfolio-section">
+                <h2>Portfolio</h2>
+                <div className="portfolio-grid">
+                    <div className="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Design 1" />
+                        <p>Evening Gown</p>
+                    </div>
+                    <div className="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Design 2" />
+                        <p>Modern Streetwear</p>
+                    </div>
+                    <div className="portfolio-item">
+                        <img src="https://via.placeholder.com/300" alt="Design 3" />
+                        <p>Bridal Couture</p>
+                    </div>
+                </div>
+            </section>
+        );
+
+        // Contact Section Component
+        const Contact = () => (
+            <section id="contact" className="contact-section">
+                <h2>Contact Me</h2>
+                <form>
+                    <label>
+                        Name:
+                        <input type="text" placeholder="Your Name" required />
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" placeholder="Your Email" required />
+                    </label>
+                    <label>
+                        Message:
+                        <textarea placeholder="Your Message" required></textarea>
+                    </label>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        );
+
+        // Footer Component
+        const Footer = () => (
+            <footer className="footer">
+                <p>&copy; 2025 Hibba Gulzar. All Rights Reserved.</p>
+            </footer>
+        );
+
+        // Main App Component
+        const App = () => (
+            <>
+                <Header />
+                <main>
+                    <About />
+                    <Portfolio />
+                    <Contact />
+                </main>
+                <Footer />
+            </>
+        );
+
+        // Render the App
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
 </body>
 
 </html>
