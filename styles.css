@@ -10,7 +10,7 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: url('https://ruhail-shaikh03.github.io/portfolio/Hibs/coco.jpg') center / 50% no-repeat;
+    background: url('https://ruhail-shaikh03.github.io/portfolio/Hibs/coco.jpg') center / cover no-repeat;
     display: flex;
     display: flex;
     justify-content: center;
