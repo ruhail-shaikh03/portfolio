@@ -33,6 +33,7 @@ body {
 }
 
 .hero-content h1 {
+    top: 10%;
     font-family: 'Playfair Display', serif;
     font-size: 6rem;
     font-weight: 800;
