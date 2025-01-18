@@ -34,20 +34,20 @@ body {
 
 .hero-content h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 6rem;
+    font-weight: 800;
     margin: 0;
-    color: #ebe4af;
-    text-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+    color: #d8c953;
+    text-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
     letter-spacing: 1px;
 }
 
 .hero-content p {
     font-family: 'Raleway', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
     margin: 20px 0;
-    color: #c3b8a2;
-    font-weight: 300;
+    color: #af986a;
+    font-weight: 500;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
