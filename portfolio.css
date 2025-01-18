@@ -65,3 +65,13 @@ body {
     background: linear-gradient(to bottom right, #f7d7b7, #f5e1a4);
     /* Warm gradient */
 }
+
+footer {
+    background: #3e2723;
+    color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
