@@ -1,0 +1,67 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    /* Soft warm background */
+    color: #333;
+    /* Dark neutral text */
+    line-height: 1.6;
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2a2a2a;
+    /* Slightly darker for contrast */
+}
+
+/* Portfolio grid layout */
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual portfolio item */
+.portfolio-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Hover effects for portfolio items */
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail image style */
+.portfolio-thumbnail {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+/* Smooth background gradients */
+body {
+    background: linear-gradient(to bottom right, #f7d7b7, #f5e1a4);
+    /* Warm gradient */
+}
